@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gasto de Energia</string>
+    <string name="button_edit">Editar</string>
+    <string name="edit_used_hours_hint">00:00</string>
+
+    <string name="dialog_delete_title">Deletar</string>
+    <string name="dialog_delete_message">Você tem certeza que deseja excluir?</string>
+    <string name="dialog_delete_positive_button">Sim</string>
+    <string name="dialog_delete_negative_button">Não</string>
+    <string name="text_name_add_object">Nome</string>
+    <string name="text_watts_add_object">Watts</string>
+    <string name="text_used_hours_add_object">Horas usadas por dia</string>
+    <string name="button_save_text">Salvar</string>
+    <string name="add_object_title_name">Novo objeto</string>
+
+    <string name="save_toast_success_text">Sucesso</string>
+    <string name="save_toast_error_text">Erro</string>
+    <string name="per_month_text">por mês</string>
+    <string name="dollar_sign">R$</string>
+    <string name="row_per_day">h/dia</string>
+    <string name="row_watts">W</string>
+
+    <string name="energy_tariff_text">Tarifa de energia</string>
+    <string name="toast_tariff_success">Tarifa adicionado com sucesso</string>
+    <string name="toast_tariff_error">Erro: Tarifa não adicionada</string>
+</resources>

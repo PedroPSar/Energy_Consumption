@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Energy Consumption</string>
+    <string name="button_edit">Edit</string>
+    <string name="edit_used_hours_hint">00:00</string>
+
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Are you sure you want to delete?</string>
+    <string name="dialog_delete_positive_button">Yes</string>
+    <string name="dialog_delete_negative_button">No</string>
+    <string name="text_name_add_object">Name</string>
+    <string name="text_watts_add_object">Watts</string>
+    <string name="text_used_hours_add_object">Hours used per day</string>
+    <string name="button_save_text">Save</string>
+    <string name="add_object_title_name">New Object</string>
+
+    <string name="save_toast_success_text">Successfully</string>
+    <string name="save_toast_error_text">Error</string>
+    <string name="per_month_text">per month</string>
+    <string name="dollar_sign">$</string>
+    <string name="row_per_day">h/day</string>
+    <string name="row_watts">W</string>
+
+    <string name="energy_tariff_text">Energy tariff</string>
+    <string name="toast_tariff_success">Tariff added successfully</string>
+    <string name="toast_tariff_error">Error: Tariff not added</string>
+</resources>

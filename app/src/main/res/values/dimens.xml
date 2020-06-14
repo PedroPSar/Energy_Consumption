@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="row_list_text">16sp</dimen>
+    <dimen name="button_radius">16dp</dimen>
+    <dimen name="add_object_label_size_text">18sp</dimen>
+    <dimen name="add_object_title_text">64sp</dimen>
+</resources>
