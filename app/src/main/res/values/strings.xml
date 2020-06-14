@@ -23,4 +23,5 @@
     <string name="energy_tariff_text">Energy tariff</string>
     <string name="toast_tariff_success">Tariff added successfully</string>
     <string name="toast_tariff_error">Error: Tariff not added</string>
+    <string name="toast_fill_all_fields">Please fill in all required fields correctly</string>
 </resources>

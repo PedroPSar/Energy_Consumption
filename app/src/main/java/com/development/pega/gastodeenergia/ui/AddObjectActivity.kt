@@ -44,11 +44,14 @@ class AddObjectActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if(v.id == R.id.button_save) {
+
+
             val name = edit_name.text.toString()
-            val watts = edit_watts.text.toString().toInt()
+            val watts = edit_watts.text.toString()
             val usedHours = edit_used_hours.text.toString()
 
-            mViewModel.save(objectID, name, watts, usedHours)
+            if(mViewModel.save(objectID, name, watts, usedHours)){}
+            else Toast.makeText(this, getString(R.string.toast_fill_all_fields), Toast.LENGTH_SHORT).show()
         }
     }
 

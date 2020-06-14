@@ -1,6 +1,7 @@
 package com.development.pega.gastodeenergia.viewmodel
 
 import android.app.Application
+import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -21,13 +22,20 @@ class AddObjectViewModel(application: Application): AndroidViewModel(application
     private val mHoursText = MutableLiveData<String>()
     val hoursText = mHoursText
 
-    fun save(id: Int, name: String, watts: Int, usedHours: String) {
-        val obj = ElectronicObject(id, name, watts, usedHours)
+    fun save(id: Int, name: String, watts: String, usedHours: String): Boolean {
 
-        if(id == 0) {
-            mSaveObject.value = repository.save(obj)
-        } else {
-            mSaveObject.value = repository.update(obj)
+        val pattern = "^(([0-1][0-9]|2[0-3]):[0-5][0-9])|(24:00)$".toRegex()
+
+        return if(!name.isEmpty() && !watts.isEmpty() && !usedHours.isEmpty() && pattern.containsMatchIn(usedHours)) {
+            val obj = ElectronicObject(id, name, watts.toInt(), usedHours)
+            if(id == 0) {
+                mSaveObject.value = repository.save(obj)
+            } else {
+                mSaveObject.value = repository.update(obj)
+            }
+            true
+        }else {
+            false
         }
     }
 
