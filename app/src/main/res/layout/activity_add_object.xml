@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorPrimary"
     tools:context=".ui.AddObjectActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +23,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/annie_use_your_telescope"
-            android:textFontWeight="700"
             android:text="@string/add_object_title_name"
             android:textColor="@android:color/white"
             android:textSize="@dimen/add_object_title_text"
@@ -59,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_name_add_object"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/add_object_label_size_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -78,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_watts_add_object"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/add_object_label_size_text"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_used_hours_add_object"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/add_object_label_size_text"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
